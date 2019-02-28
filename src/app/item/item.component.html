@@ -1,0 +1,16 @@
+<div class="item" [class.done]="todo.completed">
+  <div class="item-content">
+    <button class="item-button" (click)="toggle()">
+      <i class="material-icons" title="Mark as done">{{todo.completed ? 'check_box' : 'check_box_outline_blank'}}</i>
+    </button>
+    <div class="item-title">{{todo.title}}</div>
+  </div>
+  <div class="item-control">
+    <button class="item-button">
+      <i class="material-icons" title="Edit task">edit</i>
+    </button>
+    <button class="item-button" (click)="onDelete()">
+      <i class="material-icons" title="Delete task">delete</i>
+    </button>
+  </div>
+</div>

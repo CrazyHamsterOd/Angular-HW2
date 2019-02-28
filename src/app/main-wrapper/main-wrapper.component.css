@@ -1,0 +1,16 @@
+div.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  min-height: 95%;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+div.mainTitle {
+  margin: 20px;
+  text-align: center;
+  font-size: 36px;
+}

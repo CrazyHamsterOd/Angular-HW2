@@ -1,0 +1,5 @@
+<div class="main-wrapper">
+  <div class="mainTitle">Todo list on Angular</div>
+  <app-header (add)="create($event)"></app-header>
+  <app-list-item [todoList]="todoList"></app-list-item>
+</div>

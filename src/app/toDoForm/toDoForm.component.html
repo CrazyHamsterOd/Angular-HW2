@@ -1,0 +1,12 @@
+<div class="header">
+  <form class="addForm" (ngSubmit)="onSubmit(); todoForm.reset()" #todoForm="ngForm">
+    <input type="text" class="header-input" placeholder="Add task..." name="title" [(ngModel)]="title"
+           required>
+    <button class="header-button" type="submit" [disabled]="todoForm.form.invalid">
+      <i class="material-icons" title="Add task">note_add</i>
+    </button>
+  </form>
+  <button class="header-button">
+    <i class="material-icons" title="Hide done task">filter_list</i>
+  </button>
+</div>
