@@ -1,0 +1,15 @@
+div.header {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+app-input{
+  flex-grow: 5;
+}

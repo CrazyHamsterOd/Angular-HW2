@@ -1,0 +1,36 @@
+:host-context(.add)>button>i::before{
+  content: 'done';
+}
+
+:host-context(.edit)>button>i::before{
+  content: 'edit';
+}
+
+:host-context(.delete)>button>i::before{
+  content: 'delete';
+}
+
+:host-context(.filter)>button>i::before{
+  content: 'filter_list';
+}
+
+:host-context(.check_box)>button>i::before{
+  content: 'check_box';
+}
+
+:host-context(.check_box_outline_blank)>button>i::before{
+  content: 'check_box_outline_blank';
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: max-content;
+  height: max-content;
+  outline: none;
+}
+
+i {
+  vertical-align: middle;
+  margin-left: 5px;
+}

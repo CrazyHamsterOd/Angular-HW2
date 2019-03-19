@@ -4,10 +4,15 @@ import {FormsModule} from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
-import { MainWrapperComponent } from './main-wrapper/main-wrapper.component';
-import { ToDoFormComponent } from './toDoForm/toDoForm.component';
-import { ListItemComponent } from './list-item/list-item.component';
-import { ItemComponent } from './item/item.component';
+import { MainWrapperComponent } from './components/main-wrapper/main-wrapper.component';
+import { ToDoFormComponent } from './components/todo-header/toDoForm.component';
+import { ListItemComponent } from './components/list-item/list-item.component';
+import { ItemComponent } from './components/item/item.component';
+import { LineThroughDirective } from './directives/line-through/line-through.directive';
+import { TextButtonComponent } from './components/text-button/text-button.component';
+import { IconButtonComponent } from './components/icon-button/icon-button.component';
+import { InputComponent } from './components/input/input.component';
+import { CheckBoxComponent } from './components/check-box/check-box.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { ItemComponent } from './item/item.component';
     MainWrapperComponent,
     ToDoFormComponent,
     ListItemComponent,
-    ItemComponent
+    ItemComponent,
+    LineThroughDirective,
+    TextButtonComponent,
+    IconButtonComponent,
+    InputComponent,
+    CheckBoxComponent
   ],
   imports: [
     BrowserModule,

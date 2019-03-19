@@ -1,0 +1,12 @@
+button.item-button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: max-content;
+  height: max-content;
+  outline: none;
+}
+
+i.material-icons {
+  vertical-align: middle;
+  margin-left: 5px;
+}

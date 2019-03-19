@@ -1,0 +1,5 @@
+<form class="addForm" (ngSubmit)="onSubmit(); todoForm.reset()" #todoForm="ngForm">
+  <input type="text" class="header-input" [placeholder]="placeholder" name="title" [(ngModel)]="title"
+         required>
+  <app-icon-button class="add" type="submit" [disable]="todoForm.form.invalid"></app-icon-button>
+</form>

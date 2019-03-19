@@ -1,0 +1,11 @@
+<div class="item">
+  <div class="item-content">
+    <app-check-box [done]="todo.completed" (click)="toggle()" (completed)="onChange()"></app-check-box>
+    <div class="item-title" appLineThrough [done]="todo.completed" *ngIf="!editing">{{todo.title}}</div>
+    <app-input *ngIf="editing" [type]="'edit'" (edit)="onEdit($event)" title="{{todo.title}}"></app-input>
+  </div>
+  <div class="item-control">
+    <app-icon-button class="edit" (click)="onEditing()"></app-icon-button>
+    <app-icon-button class="delete" (click)="onDelete()"></app-icon-button>
+  </div>
+</div>
